@@ -1,11 +1,11 @@
-Project Name
+# Project Name
 This project generates an Argo workflow configuration file based on your pipeline tasks.
 
-Requirements
+## Requirements
 Python 3
 Jinja2
 Click
-Usage
+## Usage
 To generate an Argo workflow configuration file, run the following command:
 
 php
@@ -20,10 +20,10 @@ Copy code
 python3 build_spec.py my_image_name --pipeline pipeline_test
 This will generate an Argo workflow configuration file in the templates directory.
 
-Parameters
-Required
+## Parameters
+### Required
 <image_name>: The name of the Docker image you want to use in the workflow.
-Optional
+### Optional
 --pipeline <pipeline_name>: The name of the pipeline. If no pipeline name is specified, a default name will be used.
-Notes
+### Notes
 The Argo workflow configuration file is based on the argo_spec.tmpl template file in the templates directory. You can customize this file as needed to generate a workflow that meets your needs.
